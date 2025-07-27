@@ -1,0 +1,28 @@
+# Langchain
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.8
+langchain-ollama>=0.1.0
+langgraph>=0.0.40
+
+
+# Search
+google-search-results==2.4.2  # SerpAPI
+python-dotenv==1.0.1 # API key
+
+# Typing extensions
+typing-extensions>=4.10.0
+
+# Ollama
+ollama>=0.1.0
+
+# Interface
+streamlit==1.35.0
+
+# FastAPI
+fastapi                   
+uvicorn[standard]         
+httpx                      
+pydantic                  
+

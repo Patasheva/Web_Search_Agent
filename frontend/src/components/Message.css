@@ -1,0 +1,33 @@
+/* frontend/src/components/Message.css */
+.message {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .message.user {
+    justify-content: flex-end;
+  }
+  
+  .message.assistant {
+    justify-content: flex-start;
+  }
+  
+  .message-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 1.5;
+    word-wrap: break-word; /* Important pour les longs textes */
+  }
+  
+  .message.user .message-bubble {
+    background-color: #007bff;
+    color: white;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .message.assistant .message-bubble {
+    background-color: #e0e0e0;
+    color: #333;
+    border-bottom-left-radius: 5px;
+  }
