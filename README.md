@@ -25,7 +25,6 @@ Terminal 1 (backend): uvicorn main:app --reload
 http://localhost:8000
 Terminal 2 (frontend): npm start 
 http://localhost:3000
-Démo (image)
 
 
 
