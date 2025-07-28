@@ -28,10 +28,19 @@ Un chatbot simple capable d’accéder à Internet pour rechercher des informati
 ✔️ Nom de domaine (optionnel) via Azure DNS
 
 # App Services Azure
-  - Web App pour déployer le backend via GitHub
-  - Static Web App pour déployer le frontend via Github
+  - Web App pour déployer le backend via GitHub (via code et via conteneur Docker)
+  - Static Web App pour déployer le frontend via Github code 
   - Azure Key Vault: stocker les secrets et API keys.
+  - Azure Monitor: monitoting post-deployement et gestion des erreurs  
 
+Étape 3 – Déploiement (en résumé)
+
+Conteneuriser le backend FastAPI avec Docker
+Build du frontend React en production (npm run build)
+Pousser le projet sur GitHub
+Connecter GitHub à Azure App Services via GitHub Actions
+Configurer les variables d’environnement et clés dans Azure Key Vault
+Déployer automatiquement à chaque push
 
 
 
