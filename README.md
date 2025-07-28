@@ -71,6 +71,16 @@ Coût mensuel : 500 requêtes/jour =  25€/mois
 Pas de configuration avec GPU 
 Pour traiter des documents contenant à la fois du texte et des éléments visuels (images, graphiques, schémas) dans un pipeline RAG, on peut convertir chaque page ou bloc du document en image, en extraire le texte, puis générer une requête représentative (query) pour chaque unité de contenu. Ces données (image, texte, requête) sont stockées dans un fichier Parquet structuré. Ensuite, pour répondre à une question utilisateur, on transforme ce dataset en une base vectorielle multimodale : on encode à la fois le texte et l’image avec un modèle VLM, ce qui permet de faire une recherche sémantique efficace sur les documents complexes.
 
+# Optimisations à réaliser :
+- Utiliser un moteur d’indexation vectorielle
+- Limiter la longueur du contexte
+- Batcher les requêtes externes
+- Garder la trace des sources
+- Optimiser les prompts pour le résumé et la génération des réponses adaptées aux cas concrets
+- Créer un système de gestion des erreurs
+- Mettre en place un système de gestion des limites de taux (rate limiting)
+- Ajuster la température du LLM 
+  
 # Demo :
 ![Demo image](Demo.png)
 ![Demo test image](Demo_test.png)
