@@ -19,28 +19,13 @@ Un chatbot simple capable d’accéder à Internet pour rechercher des informati
 - télécharger mistral en local: ollama pull mistral:7b
 - SERPAPI_API_KEY
 - OPENROUTER_API_KEY
-
-# Déploiement sur Azure
-- Prérequis techniques
-✔️ Compte Azure actif avec une souscription
-✔️ Docker installé (pour conteneuriser backend et frontend)
-✔️ GitHub ou Azure DevOps pour CI/CD
-✔️ Nom de domaine (optionnel) via Azure DNS
-
-# App Services Azure
-  - Web App pour déployer le backend via GitHub (via code et via conteneur Docker)
-  - Static Web App pour déployer le frontend via Github code 
-  - Azure Key Vault: stocker les secrets et API keys.
-  - Azure Monitor: monitoting post-deployement et gestion des erreurs  
-
-Étape 3 – Déploiement (en résumé)
-
-Conteneuriser le backend FastAPI avec Docker
-Build du frontend React en production (npm run build)
-Pousser le projet sur GitHub
-Connecter GitHub à Azure App Services via GitHub Actions
-Configurer les variables d’environnement et clés dans Azure Key Vault
-Déployer automatiquement à chaque push
+  
+# Mode local
+Terminal 1 (backend): uvicorn main:app --reload
+http://localhost:8000
+Terminal 2 (frontend): npm start 
+http://localhost:3000
+Démo (image)
 
 
 
